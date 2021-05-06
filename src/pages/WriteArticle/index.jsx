@@ -15,7 +15,7 @@ export class WriteArticle extends Component {
             title: '',
             companyName: '',
             name: '',
-            contact: '',
+            contact: '', //email
             showName: true,
         },
         errors: {
@@ -62,8 +62,6 @@ export class WriteArticle extends Component {
         this.setState({ articleDetails })
 
     }
-
-
     selectedTags = tags => {
         this.setState({ AllTags: tags })
     }
@@ -112,20 +110,17 @@ export class WriteArticle extends Component {
             },
             "showName":articleDetails.showName,
         }
-        //alert(JSON.stringify(payload))
+
         const apiUrl = '/api/v1/article/';
 
         axios.post(apiUrl, payload).then((res) => {
-            //alert("Successfully uploaded");
-            //console.log(res.data, res.data.article._id)
-
+          
             this.setState({ showModal: false, feedbackshow: true }, () => {
                 this.setState({ articleIDForFeedback: res.data.article._id })
             })
 
         }).catch((err) => {
-            //alert("Error while uploading")
-            console.log(err);
+           
             modalContent['heading'] = "Error while uploading"
             modalContent['icon'] = "fa-frown-o"
             modalContent['text'] = "Sorry for this inconvenience.Kindly retry "
@@ -135,7 +130,6 @@ export class WriteArticle extends Component {
         })
 
     }
-
 
     render() {
         const { errors } = this.state;
@@ -177,11 +171,9 @@ export class WriteArticle extends Component {
 
                             </div>
                             <div className="row">
-
-
                                 <div className="form-group col">
-                                    <label htmlFor="exampleFormControlInput4">Contact Info <small> (for verification)</small></label>
-                                    <input type="text" className="form-control" id="exampleFormControlInput4" placeholder="college email/social media link " required onChange={this.handleInputValue('contact')} />
+                                    <label htmlFor="exampleFormControlInput4">Email <small> (for verification)</small></label>
+                                    <input type="email" className="form-control" id="exampleFormControlInput4" placeholder="college/personal email " required onChange={this.handleInputValue('contact')} />
                                     <span>{errors.contact}</span>
                                 </div>
 
