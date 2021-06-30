@@ -66,7 +66,11 @@ const HomePage = () => {
                             />
                         </Carousel.Item>
                     </Carousel>
-                    <p className="homepagePara mx-auto mt-4 text-center">Anubhav: Experience Sharing Point (A-ESP) is a platform developed for AITians to read & share encounters of various interviews.<span className="hide-for-small">Anyone from AIT can submit their experience on A-ESP to guide others on their way to the next interview. All submitted articles are categorized on the basis of the interviewer company. Anubhav also helps you to request your seniors to share their experience here.</span></p>
+                    
+                    <p className="homepagePara mx-auto text-center">Anubhav: Experience Sharing Point (A-ESP) is a platform developed for AITians to read & share encounters of various interviews.<br/>
+                    <Link to='/video' className="mt-3 btn btn-primary"><span className="d-flex align-items-center font-weight-bold">Watch Video Anubhav <i className="fa fa-play-circle fa-2x px-1 py-0" aria-hidden="true"></i></span></Link>
+                   
+                    </p>
                 </div>
                 <div className="col-md-3 order-md-1 col-12 " >
                     <div className="title-bar d-flex">
