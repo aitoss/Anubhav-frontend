@@ -9,7 +9,7 @@ const videoArray = [
   {
     url: "https://www.youtube.com/watch?v=WXeZSHPWqZ8",
     videoID: "WXeZSHPWqZ8",
-    title: "Talk with Shailesh",
+    title: "Talk with Bhupendra",
     description: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. At pariatur qui dolores voluptates perferendis, expedita ab commodi neque, sapiente necessitatibus non consectetur repellendus quidem omnis! Sit corporis ipsa rerum aliquam",
     tags: ['coding', 'zeta'],
   },
@@ -18,7 +18,7 @@ const videoArray = [
     videoID: "u3Ypg4BIu-0",
     title: "Talk with Sachin",
     description: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. At pariatur qui dolores voluptates perferendis, expedita ab commodi neque, sapiente necessitatibus non consectetur repellendus quidem omnis! Sit corporis ipsa rerum aliquam",
-    tags: ['google', 'zeta','acm-icpc','google', 'zeta','acm-icpc','google', 'zeta','acm-icpc'],
+    tags: ['google','acm-icpc','coding','acm-icpc','google','acm-icpc','coding'],
   },
   
 ]

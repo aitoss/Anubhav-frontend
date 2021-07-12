@@ -1,6 +1,5 @@
 import React from 'react'
 import { Badge } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 import './index.scss'
 
 
@@ -10,6 +9,8 @@ const VideoCard = ({ videoURL, videoID, title, description, tags }) => {
             <a href={videoURL} target="_blank" rel="noreferrer" className="video-card" >
                 <div className="thumbnail">
                     <img src={`https://img.youtube.com/vi/${videoID}/0.jpg`} alt="hj" class="img-fluid" ></img>
+                  <span> </span>
+                   
                 </div>
                 <div className="title">
                     {title}

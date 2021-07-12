@@ -1,18 +1,17 @@
-a{
-    
-    &:hover{
-        color:black;
+a {
+    &:hover {
+        color: black;
         text-decoration: none;
     }
 }
 
-.video-card{
+.video-card {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     margin: 10px;
-    width:30%;
-    min-height:340px;
+    width: 30%;
+    min-height: 340px;
     background-color: white;
     padding: 8px 16px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.11);
@@ -21,49 +20,56 @@ a{
     @media (max-width: 768px) {
         width: 96%;
         min-height: 280px;
-
     }
-    
-    .thumbnail{
+
+    .thumbnail {
         width: 100%;
         overflow: hidden;
+        position: relative;
 
-        img{
+        img {
             width: 100%;
             margin: -25px 0 -45px 0;
-                @media (max-width: 768px) {
-                     margin: -20px 0 -35px 0;
-    
-        }
+            @media (max-width: 768px) {
+                margin: -20px 0 -35px 0;
+            }
         }
 
-        
-        
-        
+        span {
+            position: absolute;
+            display: block;
+            background: url("../../assets/youtube.png");
+            background-repeat:no-repeat;
+            height: 80px;
+            width: 100px;
+            top: 50%;
+            left: 50%;
+            margin: -30px 0 0 -30px;
+           
+        }
     }
-    &:hover{
+    &:hover {
         transform: scale(1.02);
         filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
-        transition-duration: .10s;
+        transition-duration: 0.1s;
     }
 
-    .tags{
-        height:20px;
+    .tags {
+        height: 20px;
         font-size: 18px;
-        & > *{
+        & > * {
             margin-right: 5px;
         }
         @media (max-width: 768px) {
             font-size: 14px;
         }
     }
-    .title{
+    .title {
         font-size: 20px;
         font-weight: 600;
     }
 
-    .description{
-    
+    .description {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
@@ -71,7 +77,34 @@ a{
         text-overflow: ellipsis;
 
         color: #999999;
-         line-height: 1.4;
-         font-size: 0.8rem;
+        line-height: 1.4;
+        font-size: 0.8rem;
     }
 }
+
+
+
+.css-yk16xz-control{
+    border-radius: 9px !important;
+
+}
+
+
+.css-1rhbuit-multiValue {
+   background-color: #090056 !important;
+    color:white;
+
+    .css-12jo7m5{
+        color:white;
+    }
+}
+
+
+.css-xb97g8 {
+border-radius: 0px;
+cursor: pointer;
+ &:hover{
+    background-color: #f2eeed;
+    color: #090056;
+}
+ }
