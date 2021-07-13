@@ -1,7 +1,13 @@
-a {
-    &:hover {
-        color: black;
-        text-decoration: none;
+
+
+.video-card-videoList{
+    margin-top: 60px;
+
+    a {
+        &:hover {
+            color: black;
+            text-decoration: none;
+        }
     }
 }
 

@@ -6,6 +6,7 @@ import RequestArticle from "./pages/RequestArticle";
 import WriteArticle from "./pages/WriteArticle";
 import Guidelines from "./pages/Guidelines"
 import VideoAnubhav from "./pages/VideoAnubhav";
+import OurStory from "./pages/OurStory";
 
 
 export const mainRoute = [
@@ -48,6 +49,12 @@ export const mainRoute = [
         path:"/video",
         exact  :true,
         component: VideoAnubhav
-    }
+    },
+    {
+        path:"/story",
+        exact  :true,
+        component: OurStory
+    },
+
 ]
 

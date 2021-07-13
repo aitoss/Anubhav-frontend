@@ -3,6 +3,7 @@ import VideoCard from './VideoCard'
 import './index.scss'
 import videoArray from './videoData'
 import Select from "react-select";
+import Banner from './Banner';
 
 
 
@@ -47,9 +48,8 @@ export class VideoAnubhav extends Component {
     render() {
         const { selectedOption, videoList } = this.state;
         return (
-            <>
+            <> <Banner/>
                 <div className="container">
-                    <h3>Anubhav Video Interview Series</h3>
                     <div className="row  justify-content-md-center">
                         <div className="col-12 col-lg-6 ">
                             <Select
@@ -62,7 +62,7 @@ export class VideoAnubhav extends Component {
                     </div>
                 </div>
           
-                <div class="d-flex video-card-videoList flex-wrap justify-content-center mt-4" >
+                <div class="d-flex video-card-videoList flex-wrap justify-content-center pt-4" >
                     {videoList.map((item, index) =>
                         <VideoCard key={index} videoURL={item.url} videoID={item.videoID} title={item.title} description={item.description} tags={item.tags} />
                     )}
