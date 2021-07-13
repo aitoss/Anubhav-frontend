@@ -9,7 +9,7 @@ import githubLogo from '../../assets/github1.svg';
 
 const CreatorCard = ({id,Name,image,designation,githubLink,linkedInLink,instagramLink,facebookLink}) => {
     return (
-        <div className="creator-card p-3">
+        <div className="creator-card p-3 mb-3">
           <img src={image} alt="creatorImage" className="createrCardImg rounded-circle"></img>
           <p className="namePara">{Name}</p>
           <p className="designationPara"> </p>

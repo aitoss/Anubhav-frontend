@@ -5,13 +5,19 @@ import videoArray from './videoData'
 import Select from "react-select";
 import Banner from './Banner';
 
-
-
-const options = [
-    { value: "coding", label: "coding" },
-    { value: "hackathon", label: "hackathon" },
-    { value: "zeta", label: "zeta" }
-];
+const optionsArray = ['development','cp', 'hackathon', 'deutsche-bank','cp-tips', 'zeta', 'google']
+const options = []
+optionsArray.forEach(function (item) {
+options.push({
+    value: item,
+    label : item,
+})
+})
+// const options2 = [
+//     { value: "coding", label: "coding" },
+//     { value: "hackathon", label: "hackathon" },
+//     { value: "zeta", label: "zeta" }
+// ];
 
 
 export class VideoAnubhav extends Component {
