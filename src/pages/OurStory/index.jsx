@@ -1,7 +1,7 @@
 import React from 'react'
 import CreatorCard from '../../Component/CreatorCard/index';
 import { Tab, Tabs } from 'react-bootstrap'
-import ourStoryImage from '../../assets/our_story.png'
+import ourStoryImage from '../../assets/story.svg'
 import ourStoryChat from '../../assets/ourstory-chat.png'
 import './index.scss'
 import './timeline.scss'
@@ -30,16 +30,16 @@ const OurStory = () => {
         <div className="our-story">
             <div className="container">
                 <div className="row d-flex flex-wrap">
-                    <div className="col-md-6 col-sm-12 d-flex flex-column align-self-center ">
-                        <div className="title">
+                    <div className="col-md-6 col-sm-12 d-flex flex-column align-self-center">
+                        <div className="title font-bold">
                             OUR STORY
             </div>
                         <p>
                         The story of Anubhav, is as interesting as this portal. With lots of brainstorming discussion, and a motivation to improve this at each possible stage. We have created this mind-blowing portal. Explore this page to know about product owners, how it started, and the timeline for various phases of development. 
             </p>
                     </div>
-                    <div className="col-md-6 col-sm-12 mx-auto d-flex justify-content-center">
-                        <img src={ourStoryImage} alt="illustration" className="mw-100"></img>
+                    <div className="col-md-6 col-sm-12 mx-auto d-flex justify-content-center order-first order-md-last">
+                        <img src={ourStoryImage} alt="illustration" className="h-75 align-self-center"></img>
                     </div>
                 </div>
                 <hr />
@@ -62,7 +62,7 @@ const OurStory = () => {
                     <div className="col-md-5 col-sm-12 d-flex justify-content-center">
                         <img src={ourStoryChat} alt="illustration" className="w-50 "></img>
                     </div>
-                    <div className="col-md-7 col-sm-12 d-flex flex-column align-self-center ">
+                    <div className="col-md-7 col-sm-12 d-flex flex-column align-self-center order-first order-md-last">
                         <div className="title">
                             How It Started
                     </div>
