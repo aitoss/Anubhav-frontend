@@ -14,6 +14,11 @@ export const dropDownList = [
         iconClass : "fa fa-info-circle",
         title : "Guidelines"
     },
+    {
+        link : "/video", 
+        iconClass : "fa fa-video",
+        title : "Video Interview"
+    },
 ]
 
 export const mobileDropDownList = [
@@ -41,5 +46,10 @@ export const mobileDropDownList = [
         link : "/guidelines", 
         iconClass : "fa fa-info-circle",
         title : "Guidelines"
+    },
+    {
+        link : "/video", 
+        iconClass : "fa fa-video",
+        title : "Video Interview"
     },
 ]
