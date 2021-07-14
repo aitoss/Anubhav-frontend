@@ -29,7 +29,7 @@ export const gen2 = [
   {
     "id": 4,
     "name": "Kumari Palak",
-    "img": "https://i.ibb.co/jLGbHWw/Whats-App-Image-2020-10-16-at-17-59-25.jpg",
+    "img": "https://i.ibb.co/gSH2W4m/image.png",
     "githubLink":"https://github.com/Palak-137",
     "instagramLink":"https://www.instagram.com/palaaakkk_/",
     "facebookLink":"https://www.facebook.com/Palak.578",
