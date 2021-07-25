@@ -7,4 +7,3 @@ git add .
 git commit -m "build"
 git push
 cd ../
-ssh -i anubhav-latest_key.pem anubhav-latest@40.117.215.85
