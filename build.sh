@@ -2,8 +2,3 @@
 npm run build
 rm -rf ../Anubhav-backend/public/build/
 cp -r build/ ../Anubhav-backend/public/
-cd ../Anubhav-backend/
-git add .
-git commit -m "build"
-git push
-cd ../
