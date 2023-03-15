@@ -1,11 +1,12 @@
 .article-card {
     
     width: 300px;
-    height: 142px;
+    min-height: 142px;
     background: #FFFFFF;
     border-radius: 11px;
     padding: 12px 14px;
     margin: 5px 0px;
+    cursor: pointer;
     position: relative;
     &:hover {
         z-index: 1;

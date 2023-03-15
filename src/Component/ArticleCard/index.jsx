@@ -9,18 +9,17 @@ const ArticleCard = ({id,title,description,name,date,tags}) => {
         return dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear();
     }
     return (
+        <div className="article-card">
         <Link key={id} to={`/article/${id}`}>
-        <div className="article-card col-12 mb-1">
+        
             <span className="title">{title}</span>
             <span className="summary">{description}</span>
-            <div className="d-flex mt-2">
+            <div className="">
               <span className="name flex-grow-1">by {name}</span>
               <span className="time flex-grow-1"> {parseDate(date)}</span>
             </div>
-
-        </div>
-            
         </Link>
+        </div>
     )
 }
 
